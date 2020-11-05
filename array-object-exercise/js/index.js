@@ -1,6 +1,7 @@
 (function(){
 
     let pessoas = [];
+    let imc = 0;
     document.querySelector("#submit").addEventListener('click', function(e){
         e.preventDefault();
         let name = document.querySelector('#name');
@@ -9,12 +10,11 @@
         let height = document.querySelector('#height');
         
         let pessoa = new Pessoa(name.value, surname.value, weight.value, height.value);
+        document.querySelector("#result").innerHTML += pessoa.Getname + "</br>" + "Imc:" + Math.floor((pessoa.weight/(pessoa.height**2))) 
+        + '</br>' + "---------------------" + '</br>';
+        
         pessoas.push(pessoa);
-    
-        document.querySelector("#result").innerHTML += pessoa.Getname + "</br>";
-        
-        console.log(pessoas);
-        
+      
         name.value = '';
         surname.value = '';
         weight.value = '';
