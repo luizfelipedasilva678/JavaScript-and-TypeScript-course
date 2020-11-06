@@ -1,7 +1,10 @@
 (function(){
 
+    function Console(){
+        console.log(this);
+    }
+    
     let pessoas = [];
-    let imc = 0;
     document.querySelector("#submit").addEventListener('click', function(e){
         e.preventDefault();
         let name = document.querySelector('#name');
@@ -14,15 +17,17 @@
         + '</br>' + "---------------------" + '</br>';
         
         pessoas.push(pessoa);
-      
+        
         name.value = '';
         surname.value = '';
         weight.value = '';
         height.value = '';
+        
     });
     
     class Pessoa{
         constructor(name , surname , weight, height ){
+
             this.name = name || 'Name not informed';
             this.surname = surname;
             this.weight = weight;
@@ -38,6 +43,7 @@
         }
     }
 
+    Console();
 })();
 
 
