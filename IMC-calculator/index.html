@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imc-Calculator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/1934402.png" type="image/x-icon" sizes="16x16">
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imc</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Menos que 18,5</td>
+                        <td>Abaixo do peso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 18,5 e 24,9</td>
+                        <td>Peso Normal</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 25 e 29,9</td>
+                        <td>Sobre Peso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 30 e 34,9</td>
+                        <td>Obesidade Grau 1</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 35 e 39,9</td>
+                        <td>Obeside Grau 2</td>
+                    </tr>
+                    <tr>
+                        <td>Mais que 40</td>
+                        <td>Obesidade Grau 3</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h1>Calcule seu Imc</h1>
+            
+            <form action="#">
+                <label for="weight">Peso:</label>
+                <input type="number" name="weight" id="weight">
+                
+                <label for="weight">Altura:</label>
+                <input type="number" name="height" id="height">
+                
+                <button id="submit">Calcular</button>
+            </form>
+            
+        </section>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
