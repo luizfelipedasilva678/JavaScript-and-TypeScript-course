@@ -15,24 +15,10 @@
         }
         removeBackGround();
 
-        if(imc < 18.5) {
-            paintTr(0);
-        }else if(imc < 24.9) {
-            paintTr(1);
-        }else if(imc < 29.9) {
-            paintTr(2);
-        }else if(imc < 34.9) {
-            paintTr(3);
-        }else if(imc < 39.9) {
-            paintTr(4);
-        }else if(imc > 40){
-            paintTr(5);
-        }else {
-            alert('Você pode ter digitado algum valor inválido');
-        }
-    
+        checkImc(imc)
+
         console.log(imc);
-        
+                
         height.value = '';
         weight.value = '';
     });
@@ -47,6 +33,24 @@
             if (tbody.children[i].hasAttribute("style")) {
                 tbody.children[i].removeAttribute("style");
             }
+        }
+    }
+
+    function checkImc(imc) {
+        if(imc < 18.5) {
+            paintTr(0);
+        }else if(imc < 24.9) {
+            paintTr(1);
+        }else if(imc < 29.9) {
+            paintTr(2);
+        }else if(imc < 34.9) {
+            paintTr(3);
+        }else if(imc < 39.9) {
+            paintTr(4);
+        }else if(imc > 40){
+            paintTr(5);
+        }else {
+            alert('Você pode ter digitado algum valor inválido');
         }
     }
 
