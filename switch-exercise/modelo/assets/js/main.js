@@ -9,7 +9,7 @@
     
     setInterval(function (){
         const hours = new Date();
-        p.innerHTML = `${data.toDateString()} ${hours.toLocaleTimeString()}`;
+        p.innerHTML = `${hours.toDateString()} ${hours.toLocaleTimeString()}`;
     }, 1000)
     
     function getDayOfWeek(day) {
