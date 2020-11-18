@@ -1,4 +1,5 @@
-let continuar = confirm("Deseja continuar ?");
+let num = Math.random() * 10;
+
 
 /*
 do {
@@ -8,7 +9,9 @@ do {
 }while(continuar)
 */
 
-while(continuar) {
+
+while(num < 9.20) {
     alert('Olá');
-    continuar = confirm("Quer continuar ?")
+    num = Math.random() * 10;
+    console.log(num);
 }
