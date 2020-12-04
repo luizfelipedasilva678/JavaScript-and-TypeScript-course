@@ -19,11 +19,11 @@
 
     let calculator = new Calculator();
     let menuNumber = Number(prompt(' 1 - para soma \n 2 - para subtração \n 3 - para multiplicação \n 4 - para divisão \n 5 - para cancelar'));
-    let number1 = 2;
-    let number2 = 2;
+    let number1;
+    let number2;
     let result;
 
-    do {
+    while(menuNumber >= 1 && menuNumber <= 4) {
         number1 = Number(prompt('Digite o primeiro número'));
         number2 = Number(prompt('Digite o segundo número'));
         
@@ -48,6 +48,6 @@
         alert('Resultado: ' + result);
 
         menuNumber = Number(prompt(' 1 - para soma \n 2 - para subtração \n 3 - para multiplicação \n 4 - para divisão \n 5 - para cancelar'));;
-    } while (menuNumber >= 1 && menuNumber <= 4)
-
+    } 
+    
 })();
