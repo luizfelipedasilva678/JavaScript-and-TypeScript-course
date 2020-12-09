@@ -2,6 +2,6 @@
  
  <hr>
  
- <h2>JavaScript and TypeScript course repository</h2>
+ <h2>JavaScript and TypeScript course</h2>
 
 <hr>
