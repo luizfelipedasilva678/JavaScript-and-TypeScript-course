@@ -11,12 +11,49 @@ function esperaAi(msg, tempo) {
         }
 
         setTimeout(() => {
-            resolve(msg);
+            resolve(msg + ' - Passei na promise');
         }, tempo)
     })
     
 }
 
+const promises = [
+    esperaAi('Promise 3', 1000),
+    //'Primeiro valor',
+    esperaAi('Promise 1', 3000),
+    esperaAi('Promise 2', 500),
+    //'Outro valor'
+];
+
+function baixaPagina() {
+    const emCache = true;
+
+    if(emCache) {
+        return Promise.resolve('Página em cache');
+    } else {
+        return esperaAi('Baixei a página', 3000)
+    }
+}
+
+baixaPagina()
+    .then(dadosPagina => {
+        console.log(dadosPagina)
+    })
+    .catch(e => console.log(e))
+
+/*Promise.all(promises)
+    .then((valor) => {
+        console.log(valor);
+    })*/
+
+
+/*Promise.race(promises)
+    .then(valor => {
+        console.log(valor)
+    })*/
+
+
+/*
 esperaAi('Frase 1', rand(1,3))
     .then(resposta => {
         console.log(resposta)
@@ -32,3 +69,4 @@ esperaAi('Frase 1', rand(1,3))
     .catch(e => {
         console.log('ERRO:', e)
     });
+*/
