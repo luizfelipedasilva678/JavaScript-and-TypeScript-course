@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://aula57/./src/index.js"],"names":["ola","console","log"],"mappings":";;;;AAAA,IAAMA,GAAG,GAAG,KAAZ;AAEAC,OAAO,CAACC,GAAR,CAAYF,GAAZ,E","file":"bundle.js","sourcesContent":["const ola = 'ola';\n\nconsole.log(ola);"],"sourceRoot":""}
