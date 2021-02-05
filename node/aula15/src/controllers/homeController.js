@@ -1,4 +1,5 @@
 module.exports.form = function formHome(req, res) {
+    console.log(req.flash('error'))
     res.render('index');
 }
 
